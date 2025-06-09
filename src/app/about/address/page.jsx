@@ -1,11 +1,11 @@
 import React from 'react';
 
-const AddressPage = () => {
+const page = () => {
     return (
         <div>
-            <h2 className='text-4xl font-bold'>This is the address page</h2>
+            <h2>This is the address page</h2>
         </div>
     );
 };
 
-export default AddressPage;
+export default page;

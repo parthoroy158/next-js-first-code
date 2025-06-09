@@ -47,9 +47,9 @@ const ServicesPage = () => {
 
             {
                 data.map(item =>
-                    <div key={item._id} className='space-y-5'>
+                    <div key={item._id}>
                         <Link  href={`/services/${item._id}`}>
-                            <img className='w-10 flex' src={item.image} alt="" />
+                            <img className='w-10 m-3 rounded' src={item.image} alt="" />
                         </Link>
                     </div>)
             }

@@ -5,7 +5,7 @@ import React from 'react';
 const AboutPage = () => {
     const navigate = useRouter();
 
-    const loggedIn = false;
+    const loggedIn = true;
     const handleAddress = () => {
         if (loggedIn) {
             navigate.push('/about/address')
