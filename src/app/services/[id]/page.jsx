@@ -45,16 +45,20 @@ const page = ({ params }) => {
 
     return (
         <div>
-            <h1 className='font-bold'>Service Details Page:</h1>
-            <p className='font-bold'>ID:{_id}</p>
-            <div className='flex gap-5 mt-5'>
-                <img className='w-50 rounded' src={singleData.image} alt="" />
-                <div>
-                    <p className='font-bold'>Name:{singleData.name}</p>
-                    <p>Details:{singleData.details}</p>
+            {
+                singleData ? <div>
+                    <h1 className='font-bold'>Service Details Page:</h1>
+                    <p className='font-bold'>ID:{_id}</p>
+                    <div className='flex gap-5 mt-5'>
+                        <img className='w-50 rounded' src={singleData.image} alt="" />
+                        <div>
+                            <p className='font-bold'>Name:{singleData.name}</p>
+                            <p>Details:{singleData.details}</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
+                    : '404 Not Found'
+            }
         </div>
     );
 };
