@@ -3,10 +3,10 @@ import { NextResponse } from 'next/server'
 // This function can be marked `async` if using `await` inside
 export function middleware(request) {
 
-    const currentCookies = request.cookies.get('nextjs-token')
-    console.log(currentCookies.value)
+    // const currentCookies = request.cookies.get('nextjs-token')
+    // console.log(currentCookies.value)
     const dummyUserData = {
-        role: 'user',
+        role: 'admin',
         email: 'admin123@gmail.com'
     }
 
