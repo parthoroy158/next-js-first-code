@@ -2,8 +2,8 @@ import dbConnect from "@/lib/dbConnet";
 
 
 export async function GET() {
-    
-    const data = await (await dbConnect("cart_collection")).find({}).toArray()
+
+    const data = await (await dbConnect("lichee_collection")).find({}).toArray()
 
     return Response.json(data)
 }
@@ -11,6 +11,8 @@ export async function GET() {
 
 
 export async function POST(req) {
-    const postData = await req.json();
-    return Response.json({ postData })
+
+    const postData = await req.json()
+
+    return Response.json({postData })
 }

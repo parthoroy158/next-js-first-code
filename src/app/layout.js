@@ -28,9 +28,9 @@ export default function RootLayout({ children }) {
         <main className="h-screen">
           {children}
         </main>
-        <footer className="text-center text-3xl font-bold bg-blue-500 pt-10 pb-10">
+        {/* <footer className="text-center text-3xl font-bold bg-blue-500 pt-10 pb-10">
           Awesome NEXT.js  Project Footer
-        </footer>
+        </footer> */}
       </body>
     </html>
   );
